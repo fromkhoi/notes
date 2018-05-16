@@ -1,0 +1,67 @@
+<input id="input-workflow" type="text" asp-for="@Model.WorkFlowName" class="form-control flowmap-flowname" placeholder="ワークフロー名" style="width:50%" />
+
+
+<script src="~/lib/select2/select2.min.js"></script>
+<script src="~/assets/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script> // đéo chắc
+<script src="~/libEx/typeahead.js/typeahead.jquery.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    setupTypeHeadFlowmaps();
+  });
+
+  function setupTypeHeadFlowmaps() {
+    typeHeadFlowmaps($("#input-workflow"));
+  }
+
+function typeHeadFlowmaps(e) {
+    var url = '@Url.Action("ListNameWorkFlow", "HotFolder")';
+
+    var WorkFlows = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.whitespace,
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      remote: {
+        url: url + '?input=%QUERY',
+        wildcard: '%QUERY'
+      }
+    });
+
+    $(e).typeahead({
+      hint: false,
+      highlight: true,
+      minLength: 0
+    },
+    {
+      name: 'WorkFlows',
+      display: 'workFlowName', // hiển thị sau khi chọn (thay đổi input)
+      source: WorkFlows,
+      limit: 100,
+      templates: {
+        empty: [
+          '<div class="empty-message">',
+            '入力に一致する顧客が存在しません。',
+          '</div>'
+        ].join('\n'),
+        suggestion: function (WorkFlows) {
+          return '<div>' + WorkFlows.workFlowId + '【' + WorkFlows.workFlowName + '】</div>'; //show ra list khi nhấn vào thẻ input.
+        }
+      }
+    });
+
+    $('.tt-menu').css('width', '50%'); // chỉnh độ rộng thẻ input
+    $('.tt-dataset').css('width', '100%');
+  }
+
+// bắt sự kiện sau khi chọn xong. (ở đây thay đổi value trong các thẻ có id như dưới)
+$(document).on('typeahead:select', '#input-workflow', function (ev, suggestion) {
+    $('#input-workflow').val(suggestion.workFlowName)
+    $('#workflow-id').val(suggestion.workFlowId);
+    $('#workflow-layoutsize').val(suggestion.layoutSize);
+    $('#workflow-layoutsize').val(suggestion.rotationDirection);
+    $('#workflow-finishing').val(suggestion.finishing);
+    $('#workflow-stockname').val(suggestion.stockName);
+    $('#workflow-idinput').val(suggestion.workFlowId);
+    $('#workflow-outputprinter').val(suggestion.outputPrinter);
+    $('#workflow-division').val(suggestion.division);
+  });
+

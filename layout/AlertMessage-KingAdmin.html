@@ -1,0 +1,36 @@
+<button type="button" class="btn btn-success" onclick="testConnection()">接続確認</button>
+<div id="testconnect-network" class="alert alert-dismissible" role="alert"></div>
+
+<script>
+function testConnection() {
+    $.ajax({
+      type: "POST",
+      url: '@Url.Action("TestConnection", "HotFolder")',
+      data: $("#form-hotfolder").serialize(),
+      success: function (result) {
+        document.getElementById("testconnect-network").innerHTML = result.messages + '<button id="closetestconnect" onclick="closeMessageConnect()" type="button" class="close" aria-label="Close"></button>';
+        document.getElementById("closetestconnect").innerHTML = '<span aria-hidden="true">×</span>';
+        
+        if (result.status == "Success") {
+          $('#testconnect-network').removeClass('alert-danger');
+          $('#testconnect-network').addClass('alert-success');
+        } else {
+          $('#testconnect-network').removeClass('alert-success');
+          $('#testconnect-network').addClass('alert-danger');
+        }
+        $('#testconnect-network').show();
+      }
+    });
+  }
+        
+  function closeMessageConnect() {
+    $('#testconnect-network').hide();
+  }
+  </script>
+
+
+<!---->
+<div class="alert alert-danger text-danger alert-dismissable" >
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+    <div className="alert alert-danger text-danger alert-dismissable">再グループイングが失敗しました。</div>
+</div>

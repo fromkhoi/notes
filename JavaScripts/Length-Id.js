@@ -1,0 +1,1 @@
+$("[class*=order-conditions-]").length;

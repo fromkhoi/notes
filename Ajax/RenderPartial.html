@@ -1,0 +1,30 @@
+
+  <i class="fa fa-pencil" 
+	 	style="cursor:pointer;color: orangered;"
+	 	onclick="getDetailWorkFlow('@Model.WorkFlowId');">
+</i>
+
+<!-- trả dữ liệu về id body-modal-detail -->
+
+<div class="modal fade">
+                    <div class="modal-dialog" role="document">
+                      <div id="body-modal-detail">
+                        @{
+                   Html.RenderPartial("~/Functions/ProjectManager/_Partial/_DetailWorkFlow.cshtml", Model);
+                        		}
+                      </div>
+                    </div>
+</div>
+
+<script>
+function getDetailWorkFlow(workFlowId) {
+  $.ajax({
+    type: "Post",
+    url: '@Url.Action("GetWorkFlowById", "ProjectManager")',
+    data: { 'idWorkFlow': workFlowId },
+    success: function (data) {
+      $('#body-modal-detail').html(data);
+    }
+  });
+}
+</script>

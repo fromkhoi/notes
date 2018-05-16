@@ -1,0 +1,8 @@
+$('#datatable-packagefilter thead').append('<tr class="row-filter header-border"><td></td><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><td></td></tr>');
+	$('#datatable-packagefilter thead .row-filter th').each(function () {
+	$(this).html('<input type="text" class="form-control input-sm" placeholder="Search..." value="">');
+});
+
+$('#datatable-packagefilter .row-filter input').on('keyup change', function () {
+	dtTable.column($(this).parent().index() + ':visible').search(this.value).draw();
+});

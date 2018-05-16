@@ -1,0 +1,1 @@
+ (typeEnum)Enum.Parse(typeof(typeEnum), string);

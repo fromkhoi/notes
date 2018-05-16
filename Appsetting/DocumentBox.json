@@ -1,0 +1,27 @@
+{
+  "Common": {
+    "SetupRoot": "\\\\192.168.1.235\\documentbox-setup\\root",
+    "DataRoot": "\\\\192.168.1.235\\documentbox-setup\\dataroot",
+    "ServiceURLRouter": "http://192.168.1.235/print-service/api/v1/api-services/imlv"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Addr=192.168.1.235; database=DocumentBox; user id=sa; password=imlv"
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "TokenAuthentication": {
+    "AuthenticationScheme": "printportalWebApp",
+    "SecretKey": "secretkey_printportal123!",
+    "Issuer": "printportalIssuer",
+    "Audience": "printportalAudience",
+    "TokenPath": "/api/token",
+    "CookieName": "access_token",
+    "ExpirationMinutes": "120"
+  }
+}

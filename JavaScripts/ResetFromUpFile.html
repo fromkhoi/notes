@@ -1,0 +1,52 @@
+<button type="button" class="btn btn-info" id="sendDataCsv" onclick="sendFile()">K</button>
+
+// -----------------------------------------------------------------------------
+
+<form id="formUpload" method="post" asp-action="Upload" asp-controller="UpdateCarrierRefNo" enctype="multipart/form-data" style="display:none" >
+          <input id="uplInput" class="btn btn-success" type="file" name="uplFileName" value="" accept=".csv" style="display:none" />
+      </form>
+
+//-----------------------------------------------------------------------------
+<script>
+ function uploadFile() {
+    $("#uplInput").trigger('click');
+  }
+
+  $("#uplInput").change(function () {
+    importData();
+  });
+</script>
+
+// -----------------------------------------------------------------------------
+<script>
+
+  function importData() {
+    NProgress.start();
+    var formData = new FormData();
+    var file_data = $("#uplInput").prop("files")[0];
+    formData.append("file", file_data);
+    $.ajax({
+      type: 'POST',
+      processData: false,
+      contentType: false,
+      data: formData,
+      url: '@Url.Action("Upload", "UpdateCarrierRefNo")',
+      success: function (data) {
+        $("#updatecarrierrefno-list").html(data);
+        NProgress.done();
+        disableSend();  
+        var $el = $('#uplInput');
+        $el.wrap('<form>').closest('form').get(0).reset();
+        $el.unwrap();
+      },
+      error: function (error) {
+        NProgress.done();
+        console.log(error);
+        disableSend();
+        var $el = $('#uplInput');
+        $el.wrap('<form>').closest('form').get(0).reset();
+        $el.unwrap();
+      }
+    });
+}
+</script>

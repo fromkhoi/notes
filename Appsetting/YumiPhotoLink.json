@@ -1,0 +1,35 @@
+{
+    "Common": {
+        "SetupRoot": "C:\\_dev\\YumephotoLink"
+    },
+    "ConnectionStrings": {
+        "DefaultConnection": "Addr=192.168.1.235; database=YumephotoLink; user id=sa; password=imlv"
+    },
+    "TokenAuthentication": {
+        "AuthenticationScheme": "printportalyume_api",
+        "SecretKey": "secretkey_printportal_yume123!",
+        "Issuer": "printportalyume_Issuer",
+        "Audience": "printportalyume_Audience",
+        "TokenPath": "/api/token",
+        "CookieName": "access_token",
+        "ExpirationMinutes": "120"
+    },
+    "Logging": {
+        "IncludeScopes": false,
+        "LogLevel": {
+            "Default": "Debug",
+            "System": "Information",
+            "Microsoft": "Information"
+        }
+    },
+    "DocumentBox": {
+        "WebApiUrl": "http://192.168.1.236/documentbox/api/",
+        "UpdateFolderId": 100, 
+        "Token": "trusttest",
+        "ParentFolderPath": "OneFlow\\Folder01"
+    },
+    "PrinterOrder": {
+        "WebApiUrl": "http://localhost:52351/api",
+        "Token": "CSV_UPDATE"
+    }
+}

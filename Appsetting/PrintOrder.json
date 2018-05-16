@@ -1,0 +1,104 @@
+{
+    "Common": {
+      "SetupRoot": "\\\\192.168.1.235\\printorder-setup\\"
+    },
+  
+    "ConnectionStrings": {
+      "DefaultConnection": "Data Source=192.168.1.235;Initial Catalog=OneFlowOrder;Persist Security Info=True;User ID=sa;Password=imlv",
+      "HangFireConnection": "Data Source=192.168.1.235;Initial Catalog=OneFlowOrder;Persist Security Info=True;User ID=sa;Password=imlv"
+    },
+  
+    "Collaboration": {
+  
+      "ApiService": {
+        "Base": "http://192.168.1.235/print-service/api/",
+        "Ver": "v1",
+        "Env": "imlv",
+        "Id": {
+          "PCOneFlowAPI": "oneflow",
+          "DocumentBoxAPI": "document-box",
+          "ImpostripLinkAPI": "impostrip",
+          "ProductLinkAPI": "product"
+        }
+      },
+  
+      "OneFlow": {
+        "WebApiUrl": "https://pconeflow.w2p.bz/test-oneflow/api/v1/",
+        "AccessId": "trusttest"
+      },
+  
+      "DocumentBox": {
+        "WebApiUrl": "http://192.168.1.235/documentbox/api/",
+        "UpdateFolderId": 1,
+        "Token": "PrintOrder",
+        "ParentFolderPath": "OneFlow\\Folder01",
+        "SsoUpploadUrlType": "App"
+      },
+  
+      "ProductBox": {
+        "WebApiUrl": "https://xxx.xxx.xxx/OneFlow/ProductBox/"
+      },
+  
+      "ShippingSender": {
+        "ServiceId": "0001", 
+        "OrderSeqName": "OrderSeq" 
+      }
+  
+    },
+  
+    "Logging": {
+      "IncludeScopes": true,
+      "LogLevel": {
+        "Default": "Debug",
+        "System": "Warning",
+        "Microsoft": "Warning",
+        "Microsoft.EntityFrameworkCore": "Debug",
+        "Goof.PrintOrder": "Information",
+        "Goof.PrintOrdecr.Trace": "Information"
+      }
+    },
+    "Serilog": {
+      "Output": "\\\\192.168.1.235\\printorder-setup\\logs",
+      "Level": "Debug"
+    },
+  
+    "Mapping": {
+      "CsvMappingFile": "BasicMappingFile.xml",
+      "FilePath": [ "\\\\192.168.1.235\\printorder-setup\\mappings\\" ],
+      "Encoding": [ "shift_jis" ],
+      "Separator": [ "," ]
+    },
+  
+    "Hangfire": {
+      "NetworkPath": {
+        "CsvMappingFile": "BasicMappingFile.xml",
+        "MappingPath": "\\\\192.168.1.235\\printorder-setup\\mappings\\"
+      },
+      "RootPath": "\\\\192.168.1.235\\printorder-setup\\order_archive\\",
+      "StatusUpdate": {
+        "RecurringId": "PrdStsUpd",
+        "Interval": "1",
+        "Type": "H"
+      },
+      "ShippingInfoUpdate": {
+        "RecurringId": "ShippingUpd",
+        "Interval": "1",
+        "Type": "H"
+      }
+    },
+    "ApplicationTitle": {
+      "Title": "受注・入稿"
+    },
+  
+    "TokenAuthentication": {
+      "AuthenticationScheme": "printportalWebApp",
+      "SecretKey": "secretkey_printportal123!",
+      "Issuer": "printportalIssuer",
+      "Audience": "printportalAudience",
+      "TokenPath": "/api/token",
+      "CookieName": "access_token",
+      "ExpirationMinutes": "120",
+      "TokenUri": "http://192.168.1.235/pc-oneflow/api/token",
+      "LoginUri": "https://pconeflow.w2p.bz/test-ps/"
+    }
+}
