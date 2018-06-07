@@ -1,5 +1,6 @@
 [Comment C#]
 - Khai báo:  Declare
+- Trùng: duplicate
 - Gán cứng: 固定
 - File: ファイル
 - earlier versions: phiên bản trước

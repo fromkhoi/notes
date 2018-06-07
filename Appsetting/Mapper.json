@@ -1,0 +1,30 @@
+{
+  "ApplicationInsights": {
+    "InstrumentationKey": ""
+  },
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=192.168.1.235;Database=GoofMapper;User Id=sa;Password=imlv;MultipleActiveResultSets=True;",
+    "HangFireConnection": "Server=192.168.1.235;Database=GoofMapper;User Id=sa;Password=imlv;MultipleActiveResultSets=True;"
+  },
+
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+
+  "ConversionTableURL": "\\\\192.168.1.235\\mapper-setup\\GoofMapperFiles\\SharedFiles\\conversiontable\\",
+  "DeletedConversiontableURL": "\\\\192.168.1.235\\mapper-setup\\GoofMapperFiles\\SharedFiles\\deletedconversiontable\\",
+  "InputFilesURL": "\\\\192.168.1.235\\mapper-setup\\GoofMapperFiles\\SharedFiles\\inputfiles\\",
+  "OutputFilesURL": "\\\\192.168.1.235\\mapper-setup\\GoofMapperFiles\\SharedFiles\\outputfiles\\",
+  "DeletedInputFilesURL": "\\\\192.168.1.235\\mapper-setup\\GoofMapperFiles\\SharedFiles\\deletedinputfiles\\",
+  "DeletedOutputFilesURL": "\\\\192.168.1.235\\mapper-setup\\GoofMapperFiles\\SharedFiles\\deletedoutputfiles\\",
+  "ViewCodePath": "\\viewcodesettings.json",
+  "DateFormatURL": "\\Settings\\dateFormat.json",
+  "SettingsContentURL": "\\Settings\\settingsContent.json",
+  "RuleFlowViewURL": "\\Settings\\ruleFlowView.json"
+}
