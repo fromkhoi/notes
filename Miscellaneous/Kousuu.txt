@@ -17,3 +17,5 @@ Kousuu
 vcb: 0331000481242
 
 goof.backlog.jp - imlv.backlog.com: wzyCbxqG
+
+sync: 9d49af1728e6270cce84101b389d5251ce5a7b21 

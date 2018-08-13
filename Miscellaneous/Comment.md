@@ -3,6 +3,7 @@
 - Trùng: duplicate
 - Gán cứng: 固定
 - File: ファイル
+- falsy values: Giá trị giả
 - earlier versions: phiên bản trước
 - Analysis : Phân tích
 - Visualization : Trình bày

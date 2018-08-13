@@ -28,3 +28,8 @@ git stash show -p // xem toàn bộ thay đổi
 git stash branch <name> stash@{*id-tash*} // tạo một branch mới với stash mới nhất và sau đó xóa stash mới nhất khỏi stack (giống như pop)
 git stash clear // xoá toàn bộ stash đã lưu
 git stash drop stash@{*id-tash*} // xoá stash ra khỏi stack
+
+# Tìm lại một stash hoặc commit đã bị xóa
+git fsck --no-reflog | awk '/dangling commit/ {print $3}' | xargs git show > filename.txt
+
+git stash apply [comit or stash sha];

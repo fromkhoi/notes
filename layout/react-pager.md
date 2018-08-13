@@ -8,3 +8,5 @@
     className="pagination-sm pull-right"
     onPageChanged={this.handlePageChanged}
 />
+
+const list = Object.keys(this.state.inputTypeList).filter(q => q != index");
