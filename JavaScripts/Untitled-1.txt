@@ -5,3 +5,11 @@ Early returning (early exit, error first): ý tưởng của nó là hãy return
 If mà ko đi với else -> nhóm nó vào điều kiện bên ngoài
 Loài chim cánh cụt chung thuỷ suốt đời với bạn tình của mình. Điều này không làm tôi ngạc nhiên lắm bỏi tất cả các con chim cánh cụt đều giống nhau, và chúng dường như không có hy vọng là một ngày nào đó chúng sẽ gặp được một con chim cánh cụt hấp dẫn hơn" Ellen DeGeneres
 Nếu muốn biết một người đàn ông ra sao, hãy nhìn cách anh ta đối xử với người thua kém mình chứ không phải cách anh ta đối xử với người bằng vai phải lứa. Kreacher
+Phải "cắt" để code "dữ" hơn.
+Bị endcoding kí tự đặc biệt ko in ra được -> replate.
+Dấu != === trên vscode.
+chuyện deal lương.
+code nguy hiểm, code sạch
+tại sao trẻ con lại thích Ngộ không
+tại sao hàng hoá lại 499 thay vì 500
+ngón nhẫn và ngón trỏ, testosterone
