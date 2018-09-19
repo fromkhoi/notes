@@ -1,6 +1,6 @@
 # Delete local branch. 
 git branch -d *branch-name* // Không được nếu chưa đồng bộ với remove.
-git branch -D *branch-name* // Xoá con mẹ nó luôn, kệ mẹ nó có đồng bộ ko. OK!
+git branch -D *branch-name* // Xoá con mẹ nó luôn, kệ con mẹ nó có đồng bộ ko. OK!
 
 Có thể tiến hành xóa đồng thời nhiều branch bằng cách liệt kê tên các branch cần xóa liền nối tiếp nhau và cách nhau một khoảng trắng
 

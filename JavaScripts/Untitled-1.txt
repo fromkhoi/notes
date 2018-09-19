@@ -1,0 +1,7 @@
+Con đường kỳ diệu nhất dẫn đến trái tim một người là nói chuyện với anh ta về những điều anh ta trân trọng nhất
+“Dẫu điều gì xảy ra chăng nữa, hãy luôn là chính mình”.
+“Thành công là đạt được thứ bạn muốn. Hạnh phúc là muốn thứ bạn đạt được”.
+Early returning (early exit, error first): ý tưởng của nó là hãy return khỏi function sớm nhất có thể.
+If mà ko đi với else -> nhóm nó vào điều kiện bên ngoài
+Loài chim cánh cụt chung thuỷ suốt đời với bạn tình của mình. Điều này không làm tôi ngạc nhiên lắm bỏi tất cả các con chim cánh cụt đều giống nhau, và chúng dường như không có hy vọng là một ngày nào đó chúng sẽ gặp được một con chim cánh cụt hấp dẫn hơn" Ellen DeGeneres
+Nếu muốn biết một người đàn ông ra sao, hãy nhìn cách anh ta đối xử với người thua kém mình chứ không phải cách anh ta đối xử với người bằng vai phải lứa. Kreacher

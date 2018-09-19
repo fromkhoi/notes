@@ -7,11 +7,11 @@
 - earlier versions: phiên bản trước
 - Analysis : Phân tích
 - Visualization : Trình bày
--  Data Provider: Cung cấp dữ liệu
--  Ignoring: bỏ qua
--  Line: 行目
--  Nội dung: 内容
--  Chi tiết: 詳細
+- Data Provider: Cung cấp dữ liệu
+- Ignoring: bỏ qua
+- Line: 行目
+- Nội dung: 内容
+- Chi tiết: 詳細
 - Cảm ơn: 以上宜しくお願いいたします。
 
 [Commit Git]
@@ -20,6 +20,7 @@
 -  add：新規機能追加
 -  update (sửa chức năng - ko phải lỗi)：機能修正（バグではない）
 -  clean (refactor code)：整理（リファクタリング等）
+-  refactor: ﾘﾌｧｸﾀ
 -  disable：無効化
 -  remove：削除
 -  upgrade (nâng cấp)：バージョンアップ
@@ -42,3 +43,6 @@
 // Comment chinh sua
 対応致しました。
 ご確認をお願い致します。
+
+
+\\192.168.1.175\Documents
