@@ -18,4 +18,4 @@ vcb: 0331000481242
 
 goof.backlog.jp - imlv.backlog.com: wzyCbxqG
 
-sync: 9d49af1728e6270cce84101b389d5251ce5a7b21 
+sync: 81d12d1a5a8ad15ec1598a37fb0afd97c1f6f5d6
