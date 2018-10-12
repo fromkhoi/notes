@@ -51,3 +51,4 @@ Nếu tôi đã có 1 mảng nhưng tôi muốn sử dụng các giá trị tron
 
 
 Người ta thường bỏ lỡ cơ hội vì nghĩ rằng sẽ còn cơ hội tốt hơn đằng sau.
+"Con người phát triển tốt nhất ở 3 năm đầu tiên sau khi tốt nghiệp đại học, đó chính là thời điểm tốt nhất để bạn có thể học hỏi, và vươn lên một cách mạnh mẽ nhất"
