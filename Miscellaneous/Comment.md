@@ -19,6 +19,7 @@
 -  hotfix (sửa lỗi quan trọng)：クリティカルなバグ修正
 -  add：新規機能追加
 -  update (sửa chức năng - ko phải lỗi)：機能修正（バグではない）
+-  delete: 削除 
 -  clean (refactor code)：整理（リファクタリング等）
 -  refactor: ﾘﾌｧｸﾀ
 -  disable：無効化
