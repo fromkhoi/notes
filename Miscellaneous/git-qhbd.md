@@ -4,10 +4,14 @@ git branch -D *branch-name* // Xoá con mẹ nó luôn, kệ con mẹ nó có đ
 
 Có thể tiến hành xóa đồng thời nhiều branch bằng cách liệt kê tên các branch cần xóa liền nối tiếp nhau và cách nhau một khoảng trắng
 
-# Delete the most recent commit, keeping the work you've done.
+# Delete the most recent commit, keeping the work you've done. 
+// xoá commit trước giữ lại thay đổi
+
 git reset --soft HEAD~1  
 
 # Delete the most recent commit, destroying the work you've done.
+// xoá commit trước, xoá con mẹ nó hết luôn
+
 git reset --hard HEAD~1
 
 # Push local branch

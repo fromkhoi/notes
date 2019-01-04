@@ -9,6 +9,7 @@ Mẹ tôi nói ngày mưa, nỗi buồn bao giờ cũng nhiều hơn ngày nắn
 Trời sập xuống cũng đừng khóc lóc, đừng oán trách. Như thế chỉ khiến những người yêu thương con càng đau lòng, những kẻ thù hận con thêm đắc ý.
 Nỗi khổ của đời người, chính là khổ khi phải lựa chọn. Khó khăn của cuộc đời, chính là khó ở chỗ buông tay.
 Đời người được chia làm 3 giai đoạn, thể hiện rõ trong cách “nhìn đời”: Tuổi trẻ thì nhìn xa; trung niên nhìn thấu; lão niên xem nhẹ.
+Steve Job nói: "Nếu bạn nhìn thật kỹ, thành-công-trong-một-đêm thường đến từ nhiều đêm dài thất bại."
 “Hiểu được câu hỏi là đã tìm ra được một nửa đáp án”
 Nếu bạn đuổi theo 2 con thỏ, cả 2 sẽ cùng chạy thoát!
 “THỜI NAY BỌN DỐT ĐƯỢC PHÁT NGÔN NHIỀU QUÁ”
@@ -28,12 +29,14 @@ Lập trình viên là những người rất lạc quan - Mọi thứ sẽ ổn
 
 “All programmers are optimists: All will go well”
 
+thay vì x >= 2 ----> x < 1
  
 
 Bổ sung nhân lực cho một dự án chậm tiến độ sẽ càng làm nó chậm hơn.
 
 “Adding manpower to a late software project makes it later”
 
+Khi người bác sĩ đâm mũi kim vào cơ thể đứa con nít, họ toàn nói “Không đau đâu. Đừng sợ”. Trên thực tế là đau chứ, sợ chứ. Nhưng cơn đau ấy giúp ta khỏe mạnh và thoát qua những trận ốm thập tử
  
 
 Dù mẹ đứa trẻ là người như thế nào thì nó vẫn ra đời sau 9 tháng.
